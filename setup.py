@@ -13,7 +13,7 @@ def get_version(filename):
 setup(
     name='moplcd',
     version=get_version('mopidy_soundspot/__init__.py'),
-    url='https://github.com/H4genT/lcd.git',
+    url='https://github.com/H4genT/moplcd.git',
     license='private',
     author='H4genT',
     author_email='braas.hagen@gmail.com',
