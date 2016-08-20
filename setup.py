@@ -12,7 +12,7 @@ def get_version(filename):
 
 setup(
     name='moplcd',
-    version=get_version('mopidy_soundspot/__init__.py'),
+    version=get_version('moplcd/__init__.py'),
     url='https://github.com/H4genT/moplcd.git',
     license='private',
     author='H4genT',
@@ -26,11 +26,10 @@ setup(
         'setuptools',
         'Mopidy >= 0.14',
         'Pykka >= 1.1',
-        'pysoundspot',
     ],
     entry_points={
         'mopidy.ext': [
-            'moplcd = mopidy_lcd:Extension',
+            'moplcd = mopidy_moplcd:Extension',
         ],
     },
     classifiers=[
