@@ -72,12 +72,12 @@ class Translate:
  		s = s.replace('\\xc3\\xb6', 'u')	# u diaris
 
 		# Hungarian lower case
-		s = s.replace('\\xc3\\xb3', chr(243))   # ó
-		s = s.replace('\\xc3\\xad', chr(237))   # í
-		s = s.replace('\\xc3\\xb5', chr(245))   # ő
-		s = s.replace('\\xc5\\x91', chr(245))   # ő
-		s = s.replace('\\xc5\\xb1', chr(252))   # ű
-		s = s.replace('\\xc3\\xba', chr(250))   # ú
+		s = s.replace('\\xc3\\xb3', chr(243))   # 
+		s = s.replace('\\xc3\\xad', chr(237))   # 
+		s = s.replace('\\xc3\\xb5', chr(245))   # 
+		s = s.replace('\\xc5\\x91', chr(245))   # 
+		s = s.replace('\\xc5\\xb1', chr(252))   # 
+		s = s.replace('\\xc3\\xba', chr(250))   # 
 
 		# Greek upper case
  		s = s.replace('\\xce\\x91', 'A')	# Alpha
