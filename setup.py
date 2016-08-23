@@ -33,6 +33,11 @@ setup(
         ],
     },
     classifiers=[
-        
+        'Environment :: No Input/Output (Daemon)',
+        'Intended Audience :: End Users/Desktop',
+        'License :: OSI Approved :: Apache Software License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2',
+        'Topic :: Multimedia :: Sound/Audio :: Players',
     ],
 )
