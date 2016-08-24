@@ -4,13 +4,10 @@ import unicodedata
 from log_class import Log
 
 
-log = Log()
-
 class Translate:
 	displayUmlauts = True
 
 	def __init__(self):
-		log.init('radio')
 		return    
 
 	# Translate all 
