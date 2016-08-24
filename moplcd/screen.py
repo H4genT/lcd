@@ -27,6 +27,9 @@ class lines:
 
                 self.lcd.init(boardrevision)
                 self.lcd.setWidth(20)
+                self.lcd.line2(time.strftime("%c"))
+                self.lcd.line3("Screen initialisiert")
+                self.lcd.line4("ist das Codewort")
                 
         def clear(self):
                 self.lcd.line2(time.strftime(""))
