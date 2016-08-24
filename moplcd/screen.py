@@ -28,10 +28,10 @@ class lines:
                 self.lcd.init(boardrevision)
                 self.lcd.setWidth(20)
                 
-        def clear(self, word):
-                self.lcd.line2(time.strftime("%c"))
-                self.lcd.line3(word)
-                self.lcd.line4("ist das Codewort")
+        def clear(self):
+                self.lcd.line2(time.strftime(""))
+                self.lcd.line3("")
+                self.lcd.line4("")
                 
         def write(self, word):
                 self.lcd.line2(time.strftime("%c"))
