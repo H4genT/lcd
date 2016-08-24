@@ -4,7 +4,7 @@ from screen  import lines
 
 class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
         def __init__(self, config, core):
-                #super(Output, self).__init__()
+                super(moplcdFrontend, self).__init__()
                 self.core = core
                 self.lines = lines()
 
