@@ -27,16 +27,13 @@ class lines:
 
                 self.lcd.init(boardrevision)
                 self.lcd.setWidth(20)
-                self.lcd.line2(time.strftime("%c"))
-                self.lcd.line3("Screen initialisiert")
-                self.lcd.line4("ist das Codewort")
+                self.lcd.line1("    Pi Music Box")
+                self.lcd.line3("Gestartet")
                 
-        def clear(self):
-                self.lcd.line2(time.strftime(""))
-                self.lcd.line3("")
-                self.lcd.line4("")
+        def time(self):
+                self.lcd.line1(time.strftime(" %d.%m.%Y - %H:%M"))
                 
-        def write(self, word):
-                self.lcd.line2(time.strftime("%c"))
-                self.lcd.line3(word)
-                self.lcd.line4("ist das Codewort")
+        def track(self, state, track):
+                self.lcd.line2(state + " - " + track)
+                
+                
