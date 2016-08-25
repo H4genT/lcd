@@ -19,6 +19,3 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
         def track_playback_resumed(self, tl_track, time_position):
                 self.lines.track(True, tl_track)
                 self.lines.time
-                
-        def ShowTime(self):
-                self.lcd.line1(time.strftime(" %d.%m.%Y - %H:%M"))
