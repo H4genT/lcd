@@ -26,7 +26,7 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
 #                self.lines.write("mute")
                 
         def track_playback_paused(self, tl_track, time_position):
-                self.lcd.line3("Paused -" tl_track)
+                self.lcd.line3("Paused -" + tl_track)
                 ShowTime()
         
         def track_playback_resumed(self, tl_track, time_position):
