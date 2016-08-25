@@ -33,7 +33,7 @@ class lines:
                 self.lcd.line4("")
                 
         def time(self):
-                self.lcd.line2(time.strftime(" %d.%m.%Y - %H:%M"))
+                self.lcd.line2(time.strftime(" .%m.%Y - %H:%M"))
                 
         def track(self, state, track):
                 if state:
