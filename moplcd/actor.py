@@ -14,8 +14,8 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
                 
         def track_playback_paused(self, tl_track, time_position):
                 self.lines.track(False, tl_track)
-                self.lines.time
+                #self.lines.time
         
         def track_playback_resumed(self, tl_track, time_position):
                 self.lines.track(True, tl_track)
-                self.lines.time
+                #self.lines.time
