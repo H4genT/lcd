@@ -34,6 +34,9 @@ class lines:
                 self.lcd.line1(time.strftime(" %d.%m.%Y - %H:%M"))
                 
         def track(self, state, track):
-                self.lcd.line2(state + " - " + track)
+                if state:
+                        self.lcd.line2(track)
+                else:
+                        self.lcd.line2(state + " - " + track)
                 
                 
