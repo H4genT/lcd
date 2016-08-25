@@ -37,6 +37,6 @@ class lines:
                 if state:
                         self.lcd.line2(track)
                 else:
-                        self.lcd.line2(state + " - " + track)
+                        self.lcd.line2("Paused - " + track)
                 
                 
