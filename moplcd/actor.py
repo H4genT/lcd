@@ -1,4 +1,4 @@
-import pykka, time, sys
+import pykka, time, sys, logging
 from mopidy import core
 from screen  import lines
 from lcd_class import Lcd
@@ -11,7 +11,10 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
                 self.lines = lines()
                 
         def on_start(self):
-                pass
+                logger.debug('moplcd started')
+        
+        def on_stop(self):
+                logger.debug('moplcd stopped')
 
 #        def mute_changed(self, mute):
 #                self.lines.write("mute")
