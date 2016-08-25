@@ -1,4 +1,4 @@
-import pykka, time
+import pykka, time, sys
 from mopidy import core
 from screen  import lines
 from lcd_class import Lcd
