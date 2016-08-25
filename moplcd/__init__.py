@@ -19,10 +19,8 @@ class Extension(ext.Extension):
     def get_default_config(self):
         conf_file = os.path.join(os.path.dirname(__file__), 'ext.conf')
         return config.read(conf_file)
+        
+    
 
     def setup(self, registry):
-        # You will typically only do one of the following things in a
-        # single extension.
-
-         # Register a frontend
         registry.add('frontend', moplcdFrontend)
