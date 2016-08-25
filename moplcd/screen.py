@@ -31,12 +31,12 @@ class lines:
                 self.lcd.line3("Gestartet")
                 
         def time(self):
-                self.lcd.line1(time.strftime(" %d.%m.%Y - %H:%M"))
+                self.lcd.line2(time.strftime(" %d.%m.%Y - %H:%M"))
                 
         def track(self, state, track):
                 if state:
-                        self.lcd.line2(track)
+                        self.lcd.line3(track)
                 else:
-                        self.lcd.line2("Paused - " + track)
+                        self.lcd.line3("Paused - " + track)
                 
                 
