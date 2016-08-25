@@ -10,6 +10,8 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
                 self.core = core
                 self.lines = lines()
                 
+        def on_start(self):
+
 #        def mute_changed(self, mute):
 #                self.lines.write("mute")
                 
