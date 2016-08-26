@@ -12,9 +12,11 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
                 self.lines = lines()
                 
         def on_start(self):
+                logger.debug('moplcd started')
                 self.lines.startstop(True)
         
         def on_stop(self):
+                logger.debug('moplcd stopped')
                 self.lines.startstop(False)
 
 #        def mute_changed(self, mute):
