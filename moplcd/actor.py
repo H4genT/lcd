@@ -11,7 +11,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 self.core = core
                 self.config = config
                 self.lines = lines()
-                priint("Actor Init")
+                print("Actor Init")
                 
         def on_start(self):
                 logger.debug('moplcd started')
