@@ -30,5 +30,5 @@ class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
                 self.lines.track(True, "Play")
                 self.lines.time()
                 
-         def on_event(self, event, **kwargs):
+        def on_event(self, event, **kwargs):
                 return CoreListener.on_event(self, event, **kwargs)
