@@ -1,11 +1,11 @@
 import pykka, time, sys, logging
-from mopidy import core
+from mopidy.core import CoreListener
 from screen  import lines
 from lcd_class import Lcd
 
 logger = logging.getLogger('moplcd')
 
-class moplcdFrontend(pykka.ThreadingActor, core.CoreListener):
+class moplcdFrontend(pykka.ThreadingActor, CoreListener):
         def __init__(self, config, core):
                 super(moplcdFrontend, self).__init__()
                 self.core = core
