@@ -11,7 +11,7 @@ def get_version(filename):
 
 
 setup(
-    name='moplcd',
+    name='mopidy_moplcd',
     version=get_version('mopidy_moplcd/__init__.py'),
     url='https://github.com/H4genT/moplcd.git',
     license='private',
@@ -29,7 +29,7 @@ setup(
     ],
     entry_points={
         'mopidy.ext': [
-            'moplcd = moplcd:Extension',
+            'mopidy_moplcd = mopidy_moplcd:Extension',
         ],
     },
     classifiers=[
