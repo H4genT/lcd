@@ -29,7 +29,7 @@ class lines:
                 self.lcd.setWidth(20)
                 self.lcd.line1("    Pi Music Box")
                 self.lcd.line2("")
-                self.lcd.line3("Gestartet")
+                self.lcd.line3("Initialisiere...")
                 self.lcd.line4("")
                 
         def time(self):
@@ -40,5 +40,12 @@ class lines:
                         self.lcd.line3(track)
                 else:
                         self.lcd.line3("Paused - " + track)
+                        
+        def startstop(self, running):
+                if running:
+                        self.lcd.line3("Mopidy gestartet")
+                else:
+                        self.lcd.line3("Mopidy beendeet")
+                        
                 
                 
