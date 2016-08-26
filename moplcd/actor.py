@@ -9,6 +9,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
         def __init__(self, config, core):
                 super(moplcdFrontend, self).__init__()
                 self.core = core
+                self.config = config
                 self.lines = lines()
                 
         def on_start(self):
