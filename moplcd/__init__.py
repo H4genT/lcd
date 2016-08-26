@@ -12,8 +12,8 @@ __version__ = '0.1.1'
 
 class Extension(ext.Extension):
 
-    dist_name = 'mopidy_moplcd'
-    ext_name = 'mopidy_moplcd'
+    dist_name = 'moplcd'
+    ext_name = 'moplcd'
     version = __version__
 
     def get_default_config(self):
