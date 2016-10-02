@@ -10,9 +10,10 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 self.core = core
                 #self.config = config
                 self.lines = lines()
-                
-        def on_start(self):
-                #self.lines.startstop(True)
+
+'''
+        def on_start(self): 
+                self.lines.startstop(True)
         
         def on_stop(self):
                 
@@ -31,3 +32,4 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 
                 #self.lines.track(True, "Play")
                 #self.lines.time()
+'''
