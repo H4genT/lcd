@@ -9,7 +9,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 super(moplcdFrontend, self).__init__()
                 self.core = core
                 self.config = config
-                self.lines = lines()
+                #self.lines = lines()
                 print("Actor Init")
                 
         def on_start(self):
