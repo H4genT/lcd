@@ -31,7 +31,6 @@ class lines:
                 self.lcd.line2("")
                 self.lcd.line3("Initialisiere...")
                 self.lcd.line4("")
-                print("Hello")
                 
         def time(self):
                 self.lcd.line2(time.strftime(" .%m.%Y - %H:%M"))
