@@ -18,7 +18,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 
         def on_start(self): 
                 self.lines.startstop(True)
-        
+'''        
         def on_stop(self):
                 
                 #abc        
