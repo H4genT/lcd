@@ -7,8 +7,9 @@ logger = logging.getLogger('moplcd')
 class moplcdFrontend(pykka.ThreadingActor, CoreListener):
         def __init__(self, config, core):
                 super(moplcdFrontend, self).__init__()
+                logger.debug("moplcd initialising")
                 self.core = core
-                #self.config = config
+                self.config = config
                 self.lines = lines()
                 
         def track_playback_started(tl_track):
