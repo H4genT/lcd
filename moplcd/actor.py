@@ -3,6 +3,7 @@ from mopidy.core import CoreListener
 from screen  import lines
 
 logger = logging.getLogger('moplcd')
+logging.basicConfig(filename='/home/test/moplcd.log',level=logging.DEBUG)
 
 class moplcdFrontend(pykka.ThreadingActor, CoreListener):
         def __init__(self, config, core):
