@@ -28,7 +28,7 @@ class lines:
                 self.lcd.init(boardrevision)
                 self.lcd.setWidth(20)
                 self.lcd.line1("    Pi Music Box")
-                self.lcd.line2("")
+                self.lcd.line2(time.strftime(" .%m.%Y - %H:%M"))
                 self.lcd.line3("Initialisiere...")
                 self.lcd.line4("")
                 
