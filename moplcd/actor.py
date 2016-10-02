@@ -2,7 +2,7 @@ import pykka, time, sys, logging
 from mopidy.core import CoreListener
 from screen  import lines
 
-#logger = logging.getLogger('moplcd')
+logger = logging.getLogger('moplcd')
 
 class moplcdFrontend(pykka.ThreadingActor, CoreListener):
         def __init__(self, config, core):
@@ -12,6 +12,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 self.lines = lines()
                 
         def track_playback_started(tl_track):
+                logger.debug("track playback startet")
                 self.lines.track(True, tl_track)
 
 '''
