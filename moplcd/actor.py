@@ -19,8 +19,8 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 
                 #self.lines.startstop(False)
 
-#        def mute_changed(self, mute):
-#                self.lines.write("mute")
+        def mute_changed(self, mute):
+                #self.lines.write("mute")
                 
         def track_playback_paused(self, tl_track, time_position):
                 
