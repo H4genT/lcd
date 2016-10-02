@@ -1,6 +1,6 @@
 import pykka, time, sys, logging
 from mopidy.core import CoreListener
-#from screen  import lines
+from screen  import lines
 
 logger = logging.getLogger('moplcd')
 
