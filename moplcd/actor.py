@@ -16,7 +16,6 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 logger.info("track playback startet")
                 self.lines.track(True, tl_track)
 
-'''
         def on_start(self): 
                 self.lines.startstop(True)
         
