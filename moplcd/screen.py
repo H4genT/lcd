@@ -45,7 +45,7 @@ class lines:
                 if running:
                         self.lcd.line3("Mopidy gestartet")
                 else:
-                        self.lcd.line3("Mopidy beendeet")
+                        self.lcd.line3("Mopidy beendet")
                         
                 
                 
