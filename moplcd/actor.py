@@ -12,10 +12,10 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 self.config = config
                 self.lines = lines()
                 
-        def track_playback_started(self, tl_track):
+        def stream_title_changed(self, tl_track):
                 #logger.info("track playback startet")
                 self.lines.track(True, "track name")
-                self.ines.time
+                self.lines.time()
 
         def on_start(self): 
                 self.lines.startstop(True)
@@ -32,22 +32,3 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
                 
                 self.lines.track(True, "Play")
                 self.lines.time()
-'''        
-        def on_stop(self):
-                
-                #abc        
-                
-                
-        def mute_changed(self, mute):
-                #self.lines.write("mute")
-                
-        def track_playback_paused(self, tl_track, time_position):
-                
-                #self.lines.track(False, "Pause")
-                #self.lines.time()
-        
-        def track_playback_resumed(self, tl_track, time_position):
-                
-                #self.lines.track(True, "Play")
-                #self.lines.time()
-'''
