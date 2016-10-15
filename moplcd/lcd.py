@@ -46,7 +46,7 @@ LCD_D4 = 21
 LCD_D5 = 22
 LCD_D6 = 23
 LCD_D7 = 24
-LED_ON = 15 # Auskommentiert Hagen
+LED_ON = 2 # Auskommentiert Hagen
  
 # Define some device constants
 LCD_WIDTH = 20    # Maximum characters per line
