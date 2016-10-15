@@ -188,6 +188,7 @@ def lcd_string(message,line,style):
 def lcd_backlight(flag):
   # Toggle backlight on-off-on
   # GPIO.output(LED_ON, flag)
+  pass
  
 if __name__ == '__main__':
  
