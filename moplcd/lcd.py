@@ -46,7 +46,7 @@ LCD_D4 = 21
 LCD_D5 = 22
 LCD_D6 = 23
 LCD_D7 = 24
-# LED_ON = 15 # Auskommentiert Hagen
+LED_ON = 15 # Auskommentiert Hagen
  
 # Define some device constants
 LCD_WIDTH = 20    # Maximum characters per line
@@ -72,7 +72,7 @@ def main():
   GPIO.setup(LCD_D5, GPIO.OUT) # DB5
   GPIO.setup(LCD_D6, GPIO.OUT) # DB6
   GPIO.setup(LCD_D7, GPIO.OUT) # DB7
-#  GPIO.setup(LED_ON, GPIO.OUT) # Backlight enable
+  GPIO.setup(LED_ON, GPIO.OUT) # Backlight enable
  
   # Initialise display
   lcd_init()
@@ -187,8 +187,7 @@ def lcd_string(message,line,style):
  
 def lcd_backlight(flag):
   # Toggle backlight on-off-on
-  # GPIO.output(LED_ON, flag)
-  pass
+  GPIO.output(LED_ON, flag)
  
 if __name__ == '__main__':
  
