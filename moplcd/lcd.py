@@ -72,7 +72,7 @@ def main():
   GPIO.setup(LCD_D5, GPIO.OUT) # DB5
   GPIO.setup(LCD_D6, GPIO.OUT) # DB6
   GPIO.setup(LCD_D7, GPIO.OUT) # DB7
-  GPIO.setup(LED_ON, GPIO.OUT) # Backlight enable
+#  GPIO.setup(LED_ON, GPIO.OUT) # Backlight enable
  
   # Initialise display
   lcd_init()
@@ -187,7 +187,7 @@ def lcd_string(message,line,style):
  
 def lcd_backlight(flag):
   # Toggle backlight on-off-on
-  GPIO.output(LED_ON, flag)
+  # GPIO.output(LED_ON, flag)
  
 if __name__ == '__main__':
  
