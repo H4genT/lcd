@@ -67,7 +67,7 @@ class Lcd:
 
 	# Initialise for either revision 1 or 2 boards
 	def init(self,revision=2):
-        # LED outputs
+		# LED outputs
 		if revision == 1:
 			self.lcd_d4 = LCD_D4_21
 
