@@ -12,7 +12,7 @@ def get_version(filename):
 
 setup(
     name='moplcd',
-    version=get_version('moplcd/__init__.py'),
+    version=get_version('mopidy_moplcd/__init__.py'),
     url='https://github.com/H4genT/moplcd.git',
     license='private',
     author='H4genT',
