@@ -4,7 +4,6 @@ import logging
 import os
 
 from mopidy import config, exceptions, ext
-from actor import moplcdFrontend
 
 
 __version__ = '0.1.1'
@@ -23,4 +22,5 @@ class Extension(ext.Extension):
     
 
     def setup(self, registry):
+		from .actor import moplcdFrontend
         registry.add('frontend', moplcdFrontend)
