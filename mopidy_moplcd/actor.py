@@ -35,23 +35,21 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 		self.lcd.line4("")
 		
 	def stream_title_changed(self, tl_track):
-		#logger.info("track playback startet")
-		#self.lines.track(True, "track name")
-		#self.lines.time()
-		self.lcd.line3(tl_track)
+		self.lcd.line3([tl_track.track.artists+' - '+tl_track.track.name])
+		self.lcd.line4('Stream title changed')
 		
 	def on_start(self): 
-		#self.lines.startstop(True)
-		pass
+		self.lcd.line3('')
+		self.lcd.line4(' Mopidy gestartet!')
 	def on_stop(self):
-		#self.lines.startstop(False)
-		pass
+		self.lcd.line3('')
+		self.lcd.line4('  Mopidy beendet!')
 		
 	def track_playback_paused(self, tl_track, time_position):
 		
 		#self.lines.track(False, "Pause")
 		#self.lines.time()
-		self.lcd.line3(tl_track.track.name)
+		self.lcd.line3([tl_track.track.artists+' - '+tl_track.track.name])
 		self.lcd.line4('Paused')
 		
 		
@@ -59,5 +57,5 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 			
 		#self.lines.track(True, "Play")
 		#self.lines.time()
-		self.lcd.line3(tl_track.track.name)
+		self.lcd.line3([tl_track.track.artists+' - '+tl_track.track.name])
 		self.lcd.line4('Resumed')
