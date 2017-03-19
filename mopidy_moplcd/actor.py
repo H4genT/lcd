@@ -51,7 +51,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 		
 		#self.lines.track(False, "Pause")
 		#self.lines.time()
-		self.lcd.line3(tl_track)
+		self.lcd.line3(tl_track.track)
 		self.lcd.line4('Paused')
 		
 		
@@ -59,5 +59,5 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 			
 		#self.lines.track(True, "Play")
 		#self.lines.time()
-		self.lcd.line3(tl_track)
+		self.lcd.line3(tl_track.track)
 		self.lcd.line4('Resumed')
