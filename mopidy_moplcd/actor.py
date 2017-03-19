@@ -31,8 +31,8 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 		self.lcd.setRawMode(True)
 		self.lcd.line1("    Pi Music Box")
 		self.lcd.line2(time.strftime(" %d.%m.%Y - %H:%M"))
-		self.lcd.line3("Initialisiere...")
-		self.lcd.line4("")
+		self.lcd.line3("")
+		self.lcd.line4("Initialisiere...")
 		
 	def stream_title_changed(self, tl_track):
 		self.lcd.line3([tl_track.track.artists+' - '+tl_track.track.name])
