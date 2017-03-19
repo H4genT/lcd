@@ -23,4 +23,4 @@ class Extension(ext.Extension):
 
     def setup(self, registry):
 		from .actor import moplcdFrontend
-        registry.add('frontend', moplcdFrontend)
+		registry.add('frontend', moplcdFrontend)
