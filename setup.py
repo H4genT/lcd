@@ -29,7 +29,7 @@ setup(
     ],
     entry_points={
         'mopidy.ext': [
-            'moplcd = moplcd:Extension',
+            'moplcd = mopidy_moplcd:Extension',
         ],
     },
     classifiers=[
