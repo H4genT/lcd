@@ -4,7 +4,7 @@ import logging
 import os
 
 from mopidy import config, exceptions, ext
-from .actor import moplcdFrontend
+from actor import moplcdFrontend
 
 
 __version__ = '0.1.1'
