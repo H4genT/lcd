@@ -54,7 +54,7 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 		for i in tl_track.track.artists:
 			str = str + i.name + ', '
 		str = str + ' - ' + tl_track.track.name
-		self.lcd.line3(str)
+		self.lcd.scroll3(str)
 		self.lcd.line4('Paused')
 		
 		
