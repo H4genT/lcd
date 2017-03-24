@@ -59,8 +59,9 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 		
 		
 	def track_playback_resumed(self, tl_track, time_position):
-			
-		#self.lines.track(True, "Play")
-		#self.lines.time()
-		self.lcd.line3([tl_track.track.artists.name+' - '+tl_track.track.name])
+		str = ''
+		for i in tl_track.track.artists:
+			str = str + i.name + ', '
+		str = str + ' - ' + tl_track.track.name
+		self.lcd.line3(str)
 		self.lcd.line4('Resumed')
