@@ -4,6 +4,14 @@ from lcd_class import Lcd
 
 logger = logging.getLogger('moplcd')
 
+
+def disp_artist_track(tl_track):
+	for i in tl_track.track.artists:
+		str = i.name
+		break
+	str = str + ' - ' + tl_track.track.name
+	self.lcd.scroll3(str, false)
+	
 class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 	def __init__(self, config, core):
 		super(moplcdFrontend, self).__init__()
@@ -60,9 +68,4 @@ class moplcdFrontend(pykka.ThreadingActor, CoreListener):
 		
 		
 		
-	def disp_artist_track(self, tl_track):
-		for i in tl_track.track.artists:
-			str = i.name
-			break
-		str = str + ' - ' + tl_track.track.name
-		self.lcd.scroll3(str, false)
+	
